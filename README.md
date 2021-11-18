@@ -27,11 +27,4 @@ Installation requirements for Maximum Causal Tree
 
 **2. Reproduce results in the paper from scratch**
 
-    Run shell scripts: do_exp_ACTG175, do_exp_GBSG, do_exp_Hr, do_exp_Turnover, generate_results
-
-    Build MCT trees using class DyCausalTree for each factor. Call method constructTree() to build a tree.
-
-Step 3 - Recommend the most effective factor
-
-    Construct an object from class InterventionRecommender with a list of maximum causal trees. Use method makeRecommendation to generate recommendations.
-
+    Run shell scripts: do_exp_ACTG175, do_exp_GBSG, do_exp_Hr, do_exp_Turnover, generate_results.
