@@ -21,9 +21,6 @@
 echo Running on host `hostname`
 echo Time is `date`
 
-module load miniconda
-source activate pythontrahx001
-
 # our methods
 
 python do_exp.py config/ACTG175.txt train_cf.py
