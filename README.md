@@ -19,6 +19,26 @@ Installation requirements for Maximum Causal Tree
 * causalTree
 * grf
 
+# Public datasets
+
+Employee turnover (TO): This dataset contains information from 1129 people. It has 16 features describing the
+characteristics of Russian workers at a company. The outcome is time that employees remain working at the company.
+
+Human resource (HR): This dataset contains information on
+15000 people with 10 features describing the characteristics
+of employees and their employment time at a company.
+
+AIDS Clinical Trials Group Protocol 175 (ACTG175):
+This dataset consists of information of 2139 HIV infected
+subjects. There are 25 features describing the characteristics
+of patients, treatments they received, and outcomes.
+
+German Breast Cancer Study Group (GBSG): This dataset
+consists of 2232 patients from the study about the effect of
+chemotherapy and hormone treatment on the survival rate.
+The dataset has nine features describing the characteristics
+of patients, treatments they received, and outcomes.
+
 # Usage
 
 **1. Buil the prediction models and perform experiments for four datasets**
