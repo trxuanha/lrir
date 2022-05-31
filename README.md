@@ -21,10 +21,6 @@ Installation requirements for Maximum Causal Tree
 
 # Usage
 
-**1. Buil the prediction models and perform experiments for four datasets**
+**Buil the prediction models and perform experiments for four datasets**
 
     Run shell scripts: do_exp_ACTG175, do_exp_GBSG, do_exp_Hr, do_exp_Turnover.
-
-**2. Reproduce results in the paper**
-
-    Run shell scripts: generate_results.
