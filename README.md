@@ -19,6 +19,11 @@ Installation requirements for Maximum Causal Tree
 * causalTree
 * grf
 
+# Infrastructure used to run experiments:
+* OS: Red Hat Enterprise Linux, version 7.8.
+* CPU: Intel(R) Xeon(R) Gold 6246 CPU @ 3.30GHz).
+* RAM: 16 GB.
+
 # Public datasets
 
 Employee turnover (TO): This dataset contains information from 1129 people. It has 16 features describing the
