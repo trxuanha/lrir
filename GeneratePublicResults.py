@@ -32,8 +32,13 @@ def plotTrendLine(inputName, factors, outcomeName, allAxis, datasetName, gcount,
         auucScores = []
         
         #startCount = gcount
-        perPop = [0.25, 0.5,  0.75, 1.0]        
-        tickLabel  = ['0.25','0.5', '0.75', '1.0']     
+        #perPop = [0.25, 0.5,  0.75, 1.0]        
+        #tickLabel  = ['0.25','0.5', '0.75', '1.0'] 
+
+        perPop = [0.2, 0.4,  0.6, 0.8, 1.0]
+        tickLabel  = ['0.2','0.4', '0.6', '0.8', '1.0'] 
+
+        
         tickLabel = None
         
 
@@ -45,8 +50,16 @@ def plotTrendLine(inputName, factors, outcomeName, allAxis, datasetName, gcount,
         newMolde = genQiniDataML(fullResultFolder, 5, prefileName, postfileName, method, outcomeName)
         improvementModels = pd.DataFrame({})
         improvementModels = improvementModels.append(newMolde)
+        
         improvementModels['uplift'] = improvementModels['uplift']
         improvementModels['grUplift'] = improvementModels['grUplift'] 
+        
+        if(inputName == 'hr'):
+            improvementModels['uplift'] = improvementModels['uplift']* 100
+            improvementModels['grUplift'] = improvementModels['grUplift'] * 100 
+        
+        
+        
         if(label):
             if(includeFac):
                 title = datasetName +' (' + cause + ') '
@@ -69,6 +82,12 @@ def plotTrendLine(inputName, factors, outcomeName, allAxis, datasetName, gcount,
         improvementModels = improvementModels.append(newMolde)
         improvementModels['uplift'] = improvementModels['uplift']
         improvementModels['grUplift'] = improvementModels['grUplift']   
+        
+        if(inputName == 'hr'):
+            improvementModels['uplift'] = improvementModels['uplift']* 100
+            improvementModels['grUplift'] = improvementModels['grUplift'] * 100 
+
+            
         if(label):
             if(includeFac):
                 title = datasetName +' (' + cause + ') '
@@ -90,7 +109,14 @@ def plotTrendLine(inputName, factors, outcomeName, allAxis, datasetName, gcount,
         improvementModels = pd.DataFrame({})
         improvementModels = improvementModels.append(newMolde)
         improvementModels['uplift'] = improvementModels['uplift']
-        improvementModels['grUplift'] = improvementModels['grUplift']   
+        improvementModels['grUplift'] = improvementModels['grUplift'] 
+
+
+        if(inputName == 'hr'):
+            improvementModels['uplift'] = improvementModels['uplift']* 100
+            improvementModels['grUplift'] = improvementModels['grUplift'] * 100 
+
+            
         if(label):
             if(includeFac):
                 title = datasetName +' (' + cause + ') '
@@ -114,7 +140,13 @@ def plotTrendLine(inputName, factors, outcomeName, allAxis, datasetName, gcount,
         improvementModels = pd.DataFrame({})
         improvementModels = improvementModels.append(newMolde)
         improvementModels['uplift'] = improvementModels['uplift']
-        improvementModels['grUplift'] = improvementModels['grUplift']   
+        improvementModels['grUplift'] = improvementModels['grUplift'] 
+
+        if(inputName == 'hr'):
+            improvementModels['uplift'] = improvementModels['uplift']* 100
+            improvementModels['grUplift'] = improvementModels['grUplift'] * 100 
+
+            
         if(label):
             if(includeFac):
                 title = datasetName +' (' + cause + ') '
@@ -136,7 +168,11 @@ def plotTrendLine(inputName, factors, outcomeName, allAxis, datasetName, gcount,
         improvementModels = pd.DataFrame({})
         improvementModels = improvementModels.append(newMolde)
         improvementModels['uplift'] = improvementModels['uplift']
-        improvementModels['grUplift'] = improvementModels['grUplift']  
+        improvementModels['grUplift'] = improvementModels['grUplift'] 
+
+        if(inputName == 'hr'):
+            improvementModels['uplift'] = improvementModels['uplift']* 100
+            improvementModels['grUplift'] = improvementModels['grUplift'] * 100         
 
         if(includeFac):
             title = datasetName +' (' + cause + ') '
@@ -158,6 +194,10 @@ def plotTrendLine(inputName, factors, outcomeName, allAxis, datasetName, gcount,
         improvementModels = improvementModels.append(newMolde)
         improvementModels['uplift'] = improvementModels['uplift']
         improvementModels['grUplift'] = improvementModels['grUplift']
+        
+        if(inputName == 'hr'):
+            improvementModels['uplift'] = improvementModels['uplift']* 100
+            improvementModels['grUplift'] = improvementModels['grUplift'] * 100         
 
         if(label):
             if(includeFac):
@@ -184,6 +224,12 @@ def plotTrendLine(inputName, factors, outcomeName, allAxis, datasetName, gcount,
         improvementModels = improvementModels.append(newMolde)
         improvementModels['uplift'] = improvementModels['uplift']
         improvementModels['grUplift'] = improvementModels['grUplift']   
+        
+        if(inputName == 'hr'):
+            improvementModels['uplift'] = improvementModels['uplift']* 100
+            improvementModels['grUplift'] = improvementModels['grUplift'] * 100 
+
+            
         if(label):
             if(includeFac):
                 title = datasetName +' (' + cause + ') '
@@ -205,6 +251,13 @@ def plotTrendLine(inputName, factors, outcomeName, allAxis, datasetName, gcount,
         improvementModels = improvementModels.append(newMolde)
         improvementModels['uplift'] = improvementModels['uplift']
         improvementModels['grUplift'] = improvementModels['grUplift']  
+        
+        
+        if(inputName == 'hr'):
+            improvementModels['uplift'] = improvementModels['uplift']* 100
+            improvementModels['grUplift'] = improvementModels['grUplift'] * 100 
+
+            
         if(label):
             if(includeFac):
                 title = datasetName +' (' + cause + ') '
@@ -227,6 +280,12 @@ def plotTrendLine(inputName, factors, outcomeName, allAxis, datasetName, gcount,
         improvementModels = improvementModels.append(newMolde)
         improvementModels['uplift'] = improvementModels['uplift']
         improvementModels['grUplift'] = improvementModels['grUplift']  
+        
+        if(inputName == 'hr'):
+            improvementModels['uplift'] = improvementModels['uplift']* 100
+            improvementModels['grUplift'] = improvementModels['grUplift'] * 100 
+
+            
         if(label):
             if(includeFac):
                 title = datasetName +' (' + cause + ') '
@@ -332,9 +391,12 @@ def plotAUUCBar(inputName, factors, outcomeName, iaxis, datasetName, gcount, min
         auucScores.append(opiAuc) 
         print(method + ": " + str(opiAuc))         
         
+        if(inputName == 'hr'):
+            auucScores = [element * 100 for element in auucScores]
         
         grhData = pd.DataFrame({'CIMP': auucScores, 'Method': methods})
         gcount += 1
+        
         
         colors = [ 'olive', 'steelblue', 'deeppink', 'darkred', 'saddlebrown', 'blue', 'yellowgreen', 
                   'yellow', 'tab:orange', 'red', 'green']
@@ -381,7 +443,6 @@ def plotAUUCBar(inputName, factors, outcomeName, iaxis, datasetName, gcount, min
         g.spines['bottom'].set_color('black')
         g.spines['left'].set_linewidth(1)
         g.spines['bottom'].set_linewidth(1)
-        g.grid(False)
         if(minY != None):
             g.set(ylim=(minY, None))
         
@@ -391,6 +452,8 @@ def generateRank(inputName, factors, outcomeName, datasetName):
 
     ncauses  = factors.copy()
     perPop = [0.25, 0.5,  0.75, 1.0]
+    perPop = [0.2, 0.4,  0.6, 0.8, 1.0]
+    
     methods = []
     cfactors = []
     kendals = []
@@ -623,8 +686,8 @@ if(plotTrend == True):
     inputName = 'hr'
     factors = ['bestFactor']
     datasetName = 'HR'
-    minY = -15
-    maxY = 30
+    minY = -100
+    maxY = 220
     plotTrendLine(inputName, factors, outcomeName, allAxis, datasetName, gcount, minY, maxY, includeFac=False)
     allAxis[gcount].set_ylabel('OCI', fontsize=12)
     gcount += 9     
@@ -645,7 +708,7 @@ if(plotTrend == True):
     factors = ['bestFactor']
     datasetName = 'ACTG175'
     minY = -55
-    maxY = 200
+    maxY = 240
     plotTrendLine(inputName, factors, outcomeName, allAxis, datasetName, gcount, minY, maxY, xlabel=True, includeFac=False)
     allAxis[gcount].set_ylabel('OCI', fontsize=12)
     gcount += 9  
