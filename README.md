@@ -1,5 +1,5 @@
 # Latent Representation Intervention Recommendation
-A python implementation of Latent Representation Intervention Recommendation (LRIR) in paper "What is the Most Effective Intervention to Increase Job Retention for this Disabled Worker?". This implementation also uses R packages to execute baseline methods and use survival analysis.
+A python implementation of Latent Representation Intervention Recommendation (LRIR) in paper "What is the Most Effective Intervention to Increase Job Retention for this Disabled Worker?". Accepted for publication in the 28th ACM SIGKDD Conference on Knowledge Discovery & Data Mining (KDD 2022).
 
 # Installation
 Installation requirements for Maximum Causal Tree
