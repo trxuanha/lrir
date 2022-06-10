@@ -22,4 +22,4 @@ target=['outcome']
 all_factors=['treatment']
 excl_factors=['None']
 event=['event']
-zscore=0.3
+zscore=0.2
